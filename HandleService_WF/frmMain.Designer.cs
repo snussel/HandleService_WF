@@ -60,6 +60,7 @@
             // 
             // cmdOn
             // 
+            this.cmdOn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmdOn.Enabled = false;
             this.cmdOn.Location = new System.Drawing.Point(12, 408);
             this.cmdOn.Name = "cmdOn";
@@ -71,6 +72,7 @@
             // 
             // cmdOff
             // 
+            this.cmdOff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmdOff.Enabled = false;
             this.cmdOff.Location = new System.Drawing.Point(93, 407);
             this.cmdOff.Name = "cmdOff";
@@ -82,6 +84,7 @@
             // 
             // cmdExit
             // 
+            this.cmdExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdExit.Location = new System.Drawing.Point(712, 407);
             this.cmdExit.Name = "cmdExit";
             this.cmdExit.Size = new System.Drawing.Size(75, 30);
@@ -92,6 +95,8 @@
             // 
             // lblStatus
             // 
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblStatus.Location = new System.Drawing.Point(174, 407);
             this.lblStatus.Name = "lblStatus";
@@ -123,6 +128,8 @@
             this.Controls.Add(this.cmdOff);
             this.Controls.Add(this.cmdOn);
             this.Controls.Add(this.dgvServices);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMain";
             this.Text = "Service Handler";
             this.Load += new System.EventHandler(this.frmMain_Load);
